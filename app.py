@@ -163,28 +163,28 @@ if pred_type == "Single":
         r5 = st.columns(5)
 
         # Row 1
-        Area = r1[0].text_input("Area", value="40000")
-        Perimeter = r1[1].text_input("Perimeter", value="727.877")
-        MajorAxisLength = r1[2].text_input("MajorAxisLength", value="246.6991625")
-        MinorAxisLength = r1[3].text_input("MinorAxisLength", value="206.8884621")
+        Area = r1[0].text_input("Area", value="40100")
+        Perimeter = r1[1].text_input("Perimeter", value="717.877")
+        MajorAxisLength = r1[2].text_input("MajorAxisLength", value="256.6991625")
+        MinorAxisLength = r1[3].text_input("MinorAxisLength", value="216.8884621")
 
         # Row 2
-        AspectRatio = r2[0].text_input("AspectRatio", value="1.192425909")
-        Eccentricity = r2[1].text_input("Eccentricity", value="0.544706845")
-        ConvexArea = r2[2].text_input("ConvexArea", value="40425")
-        EquiDiameter = r2[3].text_input("EquiDiameter", value="225.6758334")
+        AspectRatio = r2[0].text_input("AspectRatio", value="1.190425909")
+        Eccentricity = r2[1].text_input("Eccentricity", value="0.524706845")
+        ConvexArea = r2[2].text_input("ConvexArea", value="39925")
+        EquiDiameter = r2[3].text_input("EquiDiameter", value="224.6758334")
 
         # Row 3
-        Extent = r3[0].text_input("Extent", value="0.755857899")
-        Solidity = r3[1].text_input("Solidity", value="0.989486704")
-        Roundness = r3[2].text_input("Roundness", value="0.94875453")
-        Compactness = r3[3].text_input("Compactness", value="0.914781514")
+        Extent = r3[0].text_input("Extent", value="0.765857899")
+        Solidity = r3[1].text_input("Solidity", value="0.979486704")
+        Roundness = r3[2].text_input("Roundness", value="0.92875453")
+        Compactness = r3[3].text_input("Compactness", value="0.927781514")
 
         # Row 4
-        ShapeFactor1 = r4[0].text_input("ShapeFactor1", value="0.006167479")
-        ShapeFactor2 = r4[1].text_input("ShapeFactor2", value="0.00266414")
-        ShapeFactor3 = r4[2].text_input("ShapeFactor3", value="0.836825218")
-        ShapeFactor4 = r4[3].text_input("ShapeFactor4", value="0.997852072")
+        ShapeFactor1 = r4[0].text_input("ShapeFactor1", value="0.005567479")
+        ShapeFactor2 = r4[1].text_input("ShapeFactor2", value="0.00296414")
+        ShapeFactor3 = r4[2].text_input("ShapeFactor3", value="0.896825218")
+        ShapeFactor4 = r4[3].text_input("ShapeFactor4", value="0.987852072")
 
         submit_res = r5[2].form_submit_button("Predict")
 
