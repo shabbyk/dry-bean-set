@@ -91,13 +91,13 @@ def batch_pred(file):
 # ----------------------------------------- UI ---------------------------------------------
 
 # Sidebars
-# Title "Dry bean Classifier"
+# Title "Bean Predictor"
 
 st.markdown(
     """
     <center>
         <h1>
-            <i>Dry Bean Classifier</i>
+            <i>Bean Predictor</i>
         </h2>
     </center>""",
     unsafe_allow_html=True,
