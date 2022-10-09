@@ -1,7 +1,5 @@
 import streamlit as st
 import tensorflow as tf
-import requests
-import joblib
 import pandas as pd
 import numpy as np
 import time
@@ -23,6 +21,7 @@ idx2class = {
     5: "SEKER",
     6: "SIRA",
 }
+
 
 @st.cache(suppress_st_warning=True)
 def predict(feats, model):
@@ -79,7 +78,7 @@ def batch_pred(file):
         pred_df = predict(feats=df.values, model=model)
 
         st.dataframe(pred_df)
-        
+
         if len(pred_df) != 0:
             csv = pred_df.to_csv(index=False)
             st.download_button(
@@ -236,7 +235,7 @@ if pred_type == "Single":
                 st.markdown(
                     pred_print.format(pred_df.labels[0], pred_df.confidence[0]),
                     unsafe_allow_html=True,
-                )        
+                )
 
     if len(pred_df) != 0:
         csv = pred_df.to_csv(index=False)
@@ -282,7 +281,7 @@ else:
                 👆 Sample url: {url}   
                 """
             )
- 
+
     if len(pred_df) != 0:
         csv = pred_df.to_csv(index=False)
         st.download_button(
