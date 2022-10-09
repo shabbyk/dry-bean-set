@@ -131,7 +131,7 @@ pred_type = st.sidebar.radio(
 model = None
 pred_df = pd.DataFrame()
 
-with open("tuned_rf.pkl", "rb") as f:
+with open("tuned_rf_model.pkl", "rb") as f:
     model = load(f)
 
 if pred_type == "Single":
