@@ -7,7 +7,7 @@ from pickle import load
 
 # Page config setup
 st.set_page_config(
-    page_title="Dry Bean app",
+    page_title="Bean Predictor",
     page_icon=":seedling:",
     layout="wide",
 )
